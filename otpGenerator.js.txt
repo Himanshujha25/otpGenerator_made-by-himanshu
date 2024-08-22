@@ -1,0 +1,10 @@
+function otpp(length){
+    let otp='';
+    for(i=0;i<length;i++){
+        otp+=
+        Math.floor(Math.random()*10);
+    }
+    return otp;
+}
+let otp=otpp(6);
+console.log("your otp is:",otp);
